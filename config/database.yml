@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: utf-8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: easyscreenshot_development
+  user: easyscreenshot
+  password: easyscreenshot
+  host: localhost
+
+test:
+  <<: *default
+  database: easyscreenshot_test
+
+production:
+  <<: *default
+  database: easyscreenshot_production
+  username: easyscreenshot
+  password: <%= ENV['EASYSCREENSHOT_DATABASE_PASSWORD'] %>
