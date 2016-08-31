@@ -10,6 +10,10 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'capybara'
+gem 'capybara-screenshot'
+gem 'poltergeist'
+gem 'rmagick'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -17,6 +21,9 @@ end
 
 group :development do
   gem 'web-console'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
