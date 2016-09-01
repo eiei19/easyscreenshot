@@ -14,6 +14,8 @@ gem 'capybara'
 gem 'capybara-screenshot'
 gem 'poltergeist'
 gem 'rmagick'
+gem 'sidekiq'
+gem 'redis-namespace'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -27,6 +29,7 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'dotenv-rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
