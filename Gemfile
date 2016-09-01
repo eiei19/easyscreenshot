@@ -16,6 +16,7 @@ gem 'poltergeist'
 gem 'rmagick'
 gem 'sidekiq'
 gem 'redis-namespace'
+gem 'aws-sdk', '~> 2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
