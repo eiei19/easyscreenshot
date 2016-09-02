@@ -33,7 +33,7 @@ class Screenshoter
 
   def shot_as_pc_square
     set_user_agent_chrome
-    shot(1024, 1024)
+    shot(1280, 1280)
   end
 
   private
@@ -47,8 +47,8 @@ class Screenshoter
     def shot width, height
       visit(@url)
       page.driver.resize_window width, height
-      sleep(5)
-      page.save_screenshot("tmp/screenshot.png")
+      sleep(3)
+      page.save_screenshot("tmp/#{SecureRandom.hex(8)}.png")
     end
 
 end
